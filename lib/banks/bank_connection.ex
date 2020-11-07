@@ -1,4 +1,4 @@
-defmodule Bank.Connection do
+defmodule Atm.Application do
   use Application
 
   @banks bancomer: Bancomer, santander: Santander, hsbc: Hsbc

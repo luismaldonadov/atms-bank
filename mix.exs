@@ -12,7 +12,8 @@ defmodule Atm.MixProject do
       source_url: "https://github.com/luismaldonadov/atms-bank.git",
       docs: [
         main: "Atm",
-        extras: ["README.md"]
+        extras: ["README.md"],
+        output: "docs"
       ]
     ]
   end

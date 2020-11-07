@@ -1,10 +1,10 @@
 404.html
+Atm.Application.html
 Atm.html
-Bank.Bancomer.html
+Bancomer.html
 Bank.BankGen.html
-Bank.Connection.html
-Bank.Hsbc.html
-Bank.Santander.html
+Hsbc.html
+Santander.html
 api-reference.html
 dist/app-60a0c9f10e9e52eae31f.js
 dist/elixir-9f91ebe876dc01d67920.css
@@ -12,8 +12,8 @@ dist/html/fonts/icomoon.eot
 dist/html/fonts/icomoon.svg
 dist/html/fonts/icomoon.ttf
 dist/html/fonts/icomoon.woff
-dist/search_items-7d23cedf7e.js
-dist/sidebar_items-2c1025cd19.js
+dist/search_items-e2feaea7b3.js
+dist/sidebar_items-0d8bc90524.js
 index.html
 readme.html
 search.html

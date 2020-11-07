@@ -1,7 +1,7 @@
 defmodule Bank.Connection do
   use Application
 
-  @banks bancomer: Bank.Bancomer, santander: Bank.Santander, hsbc: Bank.Hsbc
+  @banks bancomer: Bancomer, santander: Santander, hsbc: Hsbc
 
   def start(_, _start_args) do
     import Supervisor.Spec

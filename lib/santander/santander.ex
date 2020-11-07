@@ -1,4 +1,4 @@
-defmodule Bank.Santander do
+defmodule Santander do
   defstruct balance: 0, pin: nil, account_no: nil, deposits: [], withdrawals: []
 
   use Bank.BankGen,

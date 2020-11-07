@@ -1,4 +1,23 @@
 defmodule Bank.BankGen do
+  @moduledoc """
+     Module that generates a Bank by a macro with the predefined and required
+     options
+
+    opts as a keyword list
+      bank_name: atom,
+      daily_withdrawal_limit: float(),
+      accounts: %{
+        "4101-7712-3456-7890" => %{
+          balance: float(),
+          pin: String,
+          account_no: integer,
+          deposits: List,
+          withdrawals: List
+        }
+      },
+      bank_bin: String
+  """
+
   defmacro __using__(opts) do
     quote do
       use GenServer

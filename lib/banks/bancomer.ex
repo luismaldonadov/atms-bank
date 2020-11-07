@@ -5,7 +5,7 @@ defmodule Bank.Bancomer do
     bank_name: :bancomer,
     daily_withdrawal_limit: 8000.00,
     accounts: %{
-      "4101-7712-3456-7890" => %{
+      "4101-7712-3456-7890" => %Bank.Bancomer{
         balance: 8244.22,
         pin: "0021",
         account_no: 33_358_879,

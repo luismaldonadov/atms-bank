@@ -1,6 +1,6 @@
 defmodule Bank.BankGen do
   @moduledoc """
-     Module that generates a Bank by a macro with the predefined and required
+     Module that generates a GenServer Bank by a macro with the predefined and required
      options
 
     opts as a keyword list

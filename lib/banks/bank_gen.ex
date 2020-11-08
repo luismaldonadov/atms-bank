@@ -1,9 +1,10 @@
 defmodule Bank.BankGen do
   @moduledoc """
-     Module that generates a GenServer Bank by a macro with the predefined and required
+     Module that generates a GenServer Bank by a macro with the required
      options
 
-    opts as a keyword list
+    Macro opts as a keyword list
+
       bank_name: atom,
       daily_withdrawal_limit: float(),
       accounts: %{

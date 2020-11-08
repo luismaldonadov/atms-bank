@@ -1,4 +1,4 @@
-# Atm
+# atms-bank
 
 Elixir GenServer atm-bank process practice.
 

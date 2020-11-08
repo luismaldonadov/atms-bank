@@ -1,21 +1,14 @@
 # Atm
 
-**TODO: Add description**
+Elixir GenServer atm-bank process practice.
 
-## Installation
+Note: I've used Bancomer, Santander and HSBC as Bank names to gave it a sense of reality, Im not affiliated in any means with any of these banks.
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `atm` to your list of dependencies in `mix.exs`:
+Through the use of GenServer I've made a practice repo to establish communication betweent an ATM and a central Bank. In this case you can start any amount of Atms belonging to a bank, the bank centralizes the account numbers in a map that with a key belongs to a 16 digit card.
 
-```elixir
-def deps do
-  [
-    {:atm, "~> 0.1.0"}
-  ]
-end
-```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/atm](https://hexdocs.pm/atm).
+# Documentation
+
+[You can find a more detailed explanation here](https://luismaldonadov.github.io/atms-bank/)
+
 

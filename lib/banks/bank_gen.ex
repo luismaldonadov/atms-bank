@@ -41,8 +41,9 @@ defmodule Bank.BankGen do
           IO.puts("Bank #{bank_name} connection established")
           {:ok, pid}
         else
-          {:error, {:already_started, _pid}} ->
+          {:error, {:already_started, pid}} ->
             IO.puts("Bank #{bank_name} is already connected")
+            {:already_started, pid}
 
           _ ->
             {:error, "Unexepcted error when connecting"}

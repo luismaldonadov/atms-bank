@@ -111,9 +111,12 @@ Hsbc <small class="app-vsn">(atms-bank v0.1.0)</small>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
-    <a href="#create_account/1">create_account(initial_balance)</a>
+    <a href="#create_account/1">create_account(initial_balance \\ 0.0)</a>
 
   </div>
+
+    <div class="summary-synopsis"><p>  Creates an account on the bank_name GenServer process with an optional intial
+  balance</p></div>
 
 </div>
 <div class="summary-row">
@@ -162,12 +165,14 @@ Functions
 </section>
 <section class="detail" id="create_account/1">
 
+    <span id="create_account/0"></span>
+
   <div class="detail-header">
     <a href="#create_account/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">create_account(initial_balance)</h1>
+    <h1 class="signature">create_account(initial_balance \\ 0.0)</h1>
 
       <a href="https://github.com/luismaldonadov/atms-bank.git/blob/master/lib/hsbc/hsbc.ex#L4" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
@@ -179,7 +184,22 @@ Functions
 
   <section class="docstring">
 
+      <h2>Specs</h2>
+      <div class="specs">
 
+          <pre>create_account(<a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">float</a>()) :: :ok</pre>
+
+      </div>
+
+<p>  Creates an account on the bank_name GenServer process with an optional intial
+  balance</p><h2 id="create_account/1-examples" class="section-heading">
+  <a href="#create_account/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex(1)&gt; </span><span class="bp">__MODULE__</span><span class="o">.</span><span class="n">create_account</span><span class="p" data-group-id="7494067671-1">(</span><span class="mf">5000.12</span><span class="p" data-group-id="7494067671-1">)</span><span class="w">
+</span><span class="ss">:ok</span><span class="w">
+</span><span class="gp unselectable">iex(2)&gt; </span><span class="nc">VISA</span><span class="w"> </span><span class="nc">Debit</span><span class="w"> </span><span class="n">account</span><span class="w"> </span><span class="ss">created</span><span class="p">:</span><span class="w"> </span><span class="mi">4101</span><span class="o">-</span><span class="mi">7731</span><span class="o">-</span><span class="mi">7410</span><span class="o">-</span><span class="mi">8792</span><span class="w">
+</span><span class="p" data-group-id="7494067671-2">%{</span><span class="ss">account_no</span><span class="p">:</span><span class="w"> </span><span class="mi">137343541081659130</span><span class="p">,</span><span class="w"> </span><span class="ss">balance</span><span class="p">:</span><span class="w"> </span><span class="mf">5000.12</span><span class="p">,</span><span class="w"> </span><span class="ss">deposits</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="7494067671-3">[</span><span class="mf">5000.12</span><span class="p" data-group-id="7494067671-3">]</span><span class="p">,</span><span class="w"> </span><span class="ss">pin</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;1355&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">withdrawals</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="7494067671-4">[</span><span class="p" data-group-id="7494067671-4">]</span><span class="p" data-group-id="7494067671-2">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="start_link/0">

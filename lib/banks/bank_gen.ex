@@ -54,7 +54,20 @@ defmodule Bank.BankGen do
         {:ok, initial_state.accounts}
       end
 
-      def create_account(initial_balance) do
+      @doc """
+        Creates an account on the bank_name GenServer process with an optional intial
+        balance
+
+      ## Examples
+
+          iex(1)> __MODULE__.create_account(5000.12)
+          :ok
+          iex(2)> VISA Debit account created: 4101-7731-7410-8792
+          %{account_no: 137343541081659130, balance: 5000.12, deposits: [5000.12], pin: "1355", withdrawals: []}
+
+      """
+      @spec create_account(float()) :: :ok
+      def create_account(initial_balance \\ 0.0) do
         GenServer.cast(unquote(opts)[:bank_name], {:create_account, initial_balance})
       end
 

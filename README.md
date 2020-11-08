@@ -8,7 +8,7 @@ Through the use of GenServer I've made a practice repo to establish communicatio
 
 
 ## Prerequisistes
-  - Elixir 1.10.0
+  - Elixir 1.11.0
   - OTP 23
 
 ## Documentation
